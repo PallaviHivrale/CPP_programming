@@ -1,6 +1,5 @@
 // Input : 5
-// Output : *   *   *   *   *
-
+// Output : 1   2   3   4   5
 #include<iostream>
 using namespace std;
 
@@ -8,13 +7,13 @@ void Display(int iNo)
 {
     static int i = 1;
 
-    if(iNo == 0)
+    if(i <= iNo)
     {
-        return ;
+        cout<<i<<"\t";
+        i++;
+        Display(iNo);
     }
-    cout<<"*\t";
-    Display(iNo - 1);
-
+    
 }
 
 int main()

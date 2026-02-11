@@ -1,20 +1,20 @@
-// Input : 5
-// Output : *   *   *   *   *
-
+// Input : 6
+// Output : A   B   C   D   E   F
 #include<iostream>
 using namespace std;
 
 void Display(int iNo)
 {
-    static int i = 1;
+    static char ch = 'A';
 
-    if(iNo == 0)
+    if(iNo <= 0)
     {
-        return ;
+        return;
     }
-    cout<<"*\t";
-    Display(iNo - 1);
 
+    cout << ch << "\t";
+    ch++;
+    Display(iNo - 1);
 }
 
 int main()
