@@ -1,4 +1,4 @@
-// print *  *   *   *   *
+// 1    2   3   4   5
 
 #include<iostream>
 using namespace std;
@@ -9,7 +9,7 @@ void Display(int iNo)
 
     if( i<= iNo )
     {
-        cout<<"*"<<"\t";
+        cout<<i<<"\t";
         i++;
         Display(iNo);
     }
